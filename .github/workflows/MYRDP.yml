@@ -18,8 +18,8 @@ jobs:
       run: Expand-Archive ngrok.zip
     - name: MENGHUBUNGKAN AKUN NGROK
       run: .\ngrok\ngrok.exe
+      authtoken: 2ta27dLPs0sTNb0NLJjR1RgVuAW_EUTw5zpY8piE6zq4r7ko
       agent:
-      uses: 2ta27dLPs0sTNb0NLJjR1RgVuAW_EUTw5zpY8piE6zq4r7ko
     - name: SEDANG MEBERI AKSES WAIT
       run: | 
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
